@@ -1,7 +1,7 @@
 # IP INFO
 search information on ip. 
 
-![image alt](https://github.com/DarkWitch-666/T-Tool/blob/5cba77e6244b5d604239249086510a6bc7a8f127/T-T.png)
+![image alt](https://github.com/DarkWitch-666/ip-info/blob/09f3cddb813e6afd702239ede803b84cf6d13ae1/ipinfo.png)
 
 
 # Installation 
