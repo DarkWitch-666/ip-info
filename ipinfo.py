@@ -1,16 +1,12 @@
 #PYTHON 3
 import urllib.request
 import json
-import http.client
 import os
 import random
-import bs4
 import socket
 import time
-import requests #!
 import sys
-from colorama import Fore #!
-from bs4 import BeautifulSoup as BS #!
+from colorama import Fore
 
 RED, WHITE, CYAN, GREEN, DEFAULT, CYANCLARO, BOLD = '\033[91m', '\033[46m', '\033[36m', '\033[1;32m',  '\033[0m', '\033[1;36m', '\033[1m'
 
@@ -64,19 +60,6 @@ except:
     sys.exit( f"\n 			{RED}UNKNOW IP!				" )
 
 ipINFO = json.load(getInfo)
-
-def whoisIPinfo(ip):
-
-    try:
-
-        myComand = "whois " + getIP
-        whoisInfo = os.popen( myComand ).read()
-        return whoisInfo
-
-    except:
-
-        return "\n [×_ ×] — ERROR — [× _×] \n"
-
      
 print( RED + "-" * 60 )
 try:
@@ -86,14 +69,9 @@ try:
 	print( " COUNTRY - ", ipINFO["country"] )
 	print( " LOC - ", ipINFO["loc"] )
 	print( " ORG - ", ipINFO["org"] )
+	print( " host - ", ipINFO["hostname"] )
 	print( " TIME ZONE - ", ipINFO["timezone"] )
 	print( RED + "-" * 60 )
-	#pzdc = ['little-known providers work only in \ntwo or three cities or regions.\nso look sometimes for information about providers.\nthis way de-anonymization will be easier!',
-	 #'prepare a new fresh proxy before going internet!', 'different ip do not always have accurate information!', 
-	 #'to find out the ip address of a person without\nhaving access to his wifi.\njust use> iplogger.com']
-	#print('random advice:')
-	#print(GREEN + random.choice(pzdc))
-	#print( RED + "-" * 60 )
 except:
 	print("[×_ ×] — ERROR — [× _×]")
 
